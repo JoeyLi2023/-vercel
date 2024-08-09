@@ -1,0 +1,86 @@
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/alqZ3eBzOIi
+-->
+
+<div class="flex flex-col h-[80vh] max-h-[600px] bg-background rounded-lg shadow-lg overflow-hidden">
+    <header class="bg-card px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+          <img class="aspect-square h-full w-full" alt="Chatbot Avatar" src="/placeholder-user.jpg" />
+        </span>
+        <div>
+          <p class="text-sm font-medium">Friendly Chatbot</p>
+          <p class="text-xs text-muted-foreground">Online</p>
+        </div>
+      </div>
+      <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 rounded-full">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="w-4 h-4"
+        >
+          <circle cx="12.1" cy="12.1" r="1"></circle>
+        </svg>
+        <span class="sr-only">More options</span>
+      </button>
+    </header>
+    <div class="flex-1 overflow-y-auto p-4 space-y-4">
+      <div class="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm bg-muted">
+        <p>Hi there! How can I assist you today?</p>
+        <p class="text-xs text-muted-foreground">Friendly Chatbot</p>
+      </div>
+      <div class="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm ml-auto bg-primary text-primary-foreground">
+        <p>I'm having some trouble with my account. Can you help me?</p>
+        <p class="text-xs text-primary-foreground">You</p>
+      </div>
+      <div class="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm bg-muted">
+        <p>Of course, I'd be happy to help. What seems to be the issue?</p>
+        <p class="text-xs text-muted-foreground">Friendly Chatbot</p>
+      </div>
+      <div class="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm ml-auto bg-primary text-primary-foreground">
+        <p>I'm having trouble logging in. It keeps saying my password is incorrect.</p>
+        <p class="text-xs text-primary-foreground">You</p>
+      </div>
+      <div class="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm bg-muted">
+        <p>Okay, let's troubleshoot that. Can you try resetting your password?</p>
+        <p class="text-xs text-muted-foreground">Friendly Chatbot</p>
+      </div>
+    </div>
+    <div class="bg-card px-4 py-3 flex items-center space-x-2">
+      <input
+        class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1"
+        id="message"
+        placeholder="Type your message..."
+        autocomplete="off"
+      />
+      <button
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 w-10"
+        type="submit"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="w-4 h-4"
+        >
+          <path d="m22 2-7 20-4-9-9-4Z"></path>
+          <path d="M22 2 11 13"></path>
+        </svg>
+        <span class="sr-only">Send</span>
+      </button>
+    </div>
+  </div>
